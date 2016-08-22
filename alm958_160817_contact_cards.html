@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>alm958 Contact Cards</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="styles/alm958_160817_contact_cards.css">
+        <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+        <script>
+
+            $(document).ready(function(){
+                $(".hidden").hide();
+
+                $(document).on('click','.names',function(){
+                    $(this).hide();
+                    $(this).siblings().show();
+                })
+                $(document).on('click','.description',function(){
+                    $(this).hide();
+                    $(this).siblings().show();
+                })
+                $('#adduser').click(function(){
+                    $('#contactcards').append('<div class="contact"><div class="names"><p class="firstname">'+$('#firstname').val()+'</p><p class="lastname">'+$('#lastname').val()+'</p><h6 class="clickprompt">click for description</h6></div><div class="description" style="display:none;"><p>'+$('#description').val()+'</p></div></div>')
+                    $(this).closest('form').find("input[type=text], textarea").val("")
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <div id="contactcards">
+            <div id="form">
+                <h4>Vegetable Rights Society Contact</h4>
+                <form>
+                    <span><label>First Name:</label><input id="firstname" type="text"></span>
+                    <span><label>Last Name:</label><input id="lastname" type="text"></span>
+                    <p>Description:</p>
+                    <textarea id="description" name="description" rows="8" cols="40"></textarea>
+                    <input id="adduser" type="button" name="adduser" value="Add User">
+                </form> <!--end of form -->
+            </div><!--end of form div -->
+            <div class="contact">
+                <div class="names">
+                    <p class="firstname">Tombolongomungus</p>
+                    <p class="lastname">Doleyshiftigardian</p>
+                    <h6 class="clickprompt">click for description</h6>
+                </div>
+                <div class="description hidden">
+                    <p>Hang down your head, Tom Dooley Hang down your head and cry, Hang down your head, Tom Dooley, Poor boy, you're bound to dieHang down your head, Tom Dooley Hang down your head and cry, Hang down your head, Tom Dooley, Poor boy, you're bound to dieHang down your head, Tom Dooley Hang down your head and cry, Hang down your head, Tom Dooley, Poor boy, you're bound to dieHang down your head, Tom Dooley Hang down your head and cry, Hang down your head, Tom Dooley, Poor boy, you're bound to die</p>
+                </div>
+            </div
+            ><div class="contact"><!--PLEASE NOTE this non standard HTML with endtag close moved down one line is needed to manage inline block white space insuring dynamically added and pre-existing contact divs have the same white space-->
+                <div class="names">
+                    <p class="firstname">Mary Anne</p>
+                    <p class="lastname">Martin</p>
+                    <h6 class="clickprompt">click for description</h6>
+                </div>
+                <div class="description hidden">
+                    <p>Mary Anne with the shakey hands, What they've done to her man. Those shaky hands</p>
+                </div>
+            </div
+            ><div class="contact"><!--PLEASE NOTE this non standard HTML with endtag close moved down one line is needed to manage inline block white space insuring dynamically added and pre-existing contact divs have the same white space-->
+                <div class="names">
+                    <p class="firstname">Killroy</p>
+                    <p class="lastname">Washere</p>
+                    <h6 class="clickprompt">click for description</h6>
+                </div>
+                <div class="description hidden">
+                    <p>Yes he was</p>
+                </div>
+            </div
+            ><div class="contact"><!--PLEASE NOTE this non standard HTML with endtag close moved down one line is needed to manage inline block white space insuring dynamically added and pre-existing contact divs have the same white space-->
+                <div class="names">
+                    <p class="firstname">Kilgore</p>
+                    <p class="lastname">Trout</p>
+                    <h6 class="clickprompt">click for description</h6>
+                </div>
+                <div class="description hidden">
+                    <p>Kilgore Trout was bom in 1907 of American parents on the British island of Bermuda. Trout attended grammar school there until his father's job with the Royal Ornithological Society terminated. The family moved to Dayton, Ohio, where Trout graduated from Thomas Jefferson High School in 1924. Thereafter, he wandered around the country, workng at menial low-paying jobs and writing science-fiction in his spare time. His only known residences during, this period are Hyannis, Mass., Indianapolis, Ind., and Ilium and Cohoes, N.Y.  He has been married and divorced three times and has one child, Leo, a veteran of Vietnam.  As of 1974, Trout has written one hundred seventeen novels and two thousand short stories. Yet until recently he was little known. This regrettable situation is due to Trout's extreme reclusivity and his indifference to the publication of his stories. He was ill-advised in his choice of publishers, the chief one, World Classics Library, being a firm specializing pornographic novels and magazines. This ensured that his works would be distributed only to stores specializing in this genre. Yet Trout's work, with one exception,* contained no explicitly erotic content. Without Trout's permission or knowledge, World Classics Library put lurid covers on his novels and used his short stories as fillers in ''girlie'' magazines.  In the past few years, however, his fiction has come to the attention of some notable critics and writers in both mainstream and science-fiction. It has been praised for its high imagination and Swiftean satire. Professor Pierre Versins, for instance, in his massive study, Encyclopgdie de l'Utopie, des Voyages Extraordinaires, et de la Science Fiction, Editions l'Age d'Homme, S.A., Lausanne, Switzerland, 1973, says of Trout, ''A thesis on the too neglected works of this author would be most welcome.''This is true, but the task of collecting his entire corpus of works is formidable. Even the wealthiest and most indefatigable of collectors cannot boast that they have all of Trout's stories. Venus on the Half-Shell is so rare that its only known possessor required payment of several thousand dollars for its purchase by Dell Publishing Company.  However, as one prominent writer has predicted, Trout's career is on the upswing. Dell is proud to be the first to launch Kilgore Trout into the literary-mainstream. That the author is no longer indifferent ,to his brain-children is shown by his insistence on rewriting Venus on the Half-Shell, updating it somewhat, and expanding the character of Chworktap.</p>
+                </div>
+            </div
+            ><div class="contact"><!--PLEASE NOTE this non standard HTML with endtag close moved down one line is needed to manage inline block white space insuring dynamically added and pre-existing contact divs have the same white space-->
+                <div class="names">
+                    <p class="firstname">Dino</p>
+                    <p class="lastname">Liston</p>
+                    <h6 class="clickprompt">click for description</h6>
+                </div>
+                <div class="description hidden">
+                    <p>Dino's as laid back as they come. But if your in a spot, he's they guy you want by your side.  Master of the karambit and the balasiong, Dino WILL bring a knife to a gun fight.  He is also in possesion of the world's best waldorf salad recipe.</p>
+                </div>
+            </div
+            ><div class="contact"><!--PLEASE NOTE this non standard HTML with endtag close moved down one line is needed to manage inline block white space insuring dynamically added and pre-existing contact divs have the same white space-->
+                <div class="names">
+                    <p class="firstname">Killroy</p>
+                    <p class="lastname">Washere</p>
+                    <h6 class="clickprompt">click for description</h6>
+                </div>
+                <div class="description hidden">
+                    <p>Yes he was</p>
+                </div>
+            </div
+            ><div class="contact"><!--PLEASE NOTE this non standard HTML with endtag close moved down one line is needed to manage inline block white space insuring dynamically added and pre-existing contact divs have the same white space-->
+                <div class="names">
+                    <p class="firstname">Tom</p>
+                    <p class="lastname">Dooley</p>
+                    <h6 class="clickprompt">click for description</h6>
+                </div>
+                <div class="description hidden">
+                    <p>Hang down your head, Tom Dooley Hang down your head and cry, Hang down your head, Tom Dooley, Poor boy, you're bound to dieHang down your head, Tom Dooley Hang down your head and cry, Hang down your head, Tom Dooley, Poor boy, you're bound to dieHang down your head, Tom Dooley Hang down your head and cry, Hang down your head, Tom Dooley, Poor boy, you're bound to dieHang down your head, Tom Dooley Hang down your head and cry, Hang down your head, Tom Dooley, Poor boy, you're bound to die</p>
+                </div>
+            </div
+            ><div class="contact"><!--PLEASE NOTE this non standard HTML with endtag close moved down one line is needed to manage inline block white space insuring dynamically added and pre-existing contact divs have the same white space-->
+                <div class="names">
+                    <p class="firstname">Mary Anne</p>
+                    <p class="lastname">Martin</p>
+                    <h6 class="clickprompt">click for description</h6>
+                </div>
+                <div class="description hidden">
+                    <p>Mary Anne with the shakey hands, What they've done to her man. Those shaky hands</p>
+                </div>
+            </div
+            ><div class="contact"><!--PLEASE NOTE this non standard HTML with endtag close moved down one line is needed to manage inline block white space insuring dynamically added and pre-existing contact divs have the same white space-->
+                <div class="names">
+                    <p class="firstname">Killroybedaliariusonium</p>
+                    <p class="lastname">Washeredominumastus</p>
+                    <h6 class="clickprompt">click for description</h6>
+                </div>
+                <div class="description hidden">
+                    <p>Yes he was</p>
+                </div>
+            </div></div><!--end of contactcards div PLEASE NOTE this non standard HTML indenting is needed to manage inline block white space insuring dynamically added and pre-existing contact divs have the same white space-->
+    </body>
+</html>
